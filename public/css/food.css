@@ -1,0 +1,167 @@
+.filter-container {
+	position: relative; 
+	display: grid;
+	grid-template-columns: repeat(5, 19%);
+	grid-template-rows: 10vh minmax(10vh, auto) minmax(10vh, auto); 
+	grid-template-areas:
+		'filter-title filter-title filter-title filter-title filter-title'
+		'filter-reset filter-name filter-barcode filter-type filter-group'
+		'product-list product-list product product product';
+	grid-column-gap: 1.25%;
+	grid-row-gap: 1vh;
+	box-sizing: border-box;
+	min-width: 95vw; 
+	max-width: 95vw; 
+	margin: 0 auto; 
+	padding: 0;
+}
+
+.filter-container > div {
+	text-align: center;
+}
+
+.filter-title {
+	grid-area: filter-title;
+	    grid-row: span 5 / span 5;
+	    grid-column-start: 1;
+	    grid-row-start: 1;
+	min-height: 10vh;
+	max-height: 10vh;
+	line-height: 10vh;
+	overflow-y: hidden;
+	background-color: transparent;
+	color: black;
+	font-weight: bold;
+}
+
+.filter-title > span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 5vh;
+	font-size: 5vh;
+	font-weight: bold;
+}
+
+.filter-reset {
+	grid-area: filter-reset;
+	    grid-row: span 1 / span 1;
+	    grid-column-start: 1;
+	    grid-row-start: 2;
+	min-height: 2vh;
+	max-height: 20vh;
+	overflow-y: hidden;
+	background-color: transparent;
+	color: black;
+	font-weight: bold;
+	padding: 0.5vh 0.5vw;
+}
+
+.filter-name {
+	grid-area: filter-name;
+	    grid-row: span 1 / span 1;
+	    grid-column-start: 2;
+	    grid-row-start: 2;
+	min-height: 2vh;
+	max-height: 20vh;
+	overflow-y: hidden;
+	background-color: whitesmoke;
+	color: black;
+	font-weight: bold;
+	padding: 0.5vh 0.5vw;
+}
+
+.filter-barcode {
+	grid-area: filter-barcode;
+	    grid-row: span 1 / span 1;
+	    grid-column-start: 3;
+	    grid-row-start: 2;
+	min-height: 2vh;
+	max-height: 20vh;
+	overflow-y: hidden;
+	background-color: whitesmoke;
+	color: black;
+	font-weight: bold;
+	padding: 0.5vh 0.5vw;
+}
+
+.filter-type {
+	grid-area: filter-type;
+	    grid-row: span 1 / span 1;
+	    grid-column-start: 4;
+	    grid-row-start: 2;
+	min-height: 2vh;
+	max-height: 20vh;
+	overflow-y: hidden;
+	background-color: whitesmoke;
+	color: black;
+	font-weight: bold;
+	padding: 0.5vh 0.5vw;
+}
+
+.filter-group {
+	grid-area: filter-group;
+	    grid-row: span 1 / span 1;
+	    grid-column-start: 5;
+	    grid-row-start: 2;
+	min-height: 2vh;
+	max-height: 20vh;
+	overflow-y: hidden;
+	background-color: whitesmoke;
+	color: black;
+	font-weight: bold;
+	padding: 0.5vh 0.5vw;
+}
+
+.product-list {
+	grid-area: product-list;
+		grid-row: span 2 / span 2;
+		grid-column-start: 1;
+		grid-row-start: 3;
+	min-height: 10vh;
+	max-height: 60vh;
+	overflow-y: hidden;
+	overflow-x: auto;
+	background-color: black;
+	color: whitesmoke;
+	padding: 0.5vh 0.5vw;
+}
+
+.product {
+	grid-area: product;
+		grid-row: span 3 / span 3;
+		grid-column-start: 3;
+		grid-row-start: 3;
+	min-height: 10vh;
+	max-height: 60vh;
+	overflow-y: hidden;
+	overflow-x: auto;
+	background-color: black;
+	color: whitesmoke;
+	padding: 0.5vh 0.5vw;
+}
+
+.page-control {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.page-first {
+	color: darkred;
+	padding-right: 0.5vw;
+}
+
+.page-prev {
+	color: red;
+	padding-right: 0.5vw;
+}
+
+.page-next {
+	color: green;
+	padding-left: 0.5vw;
+}
+
+.page-last {
+	color: darkgreen;
+	padding-left: 0.5vw;
+}
+
